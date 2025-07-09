@@ -47,6 +47,25 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 ---
 
+## Passos para subir o projeto com Docker
+
+1. **Certifique-se de que o Docker e o Docker Compose estão instalados.**
+2. **Na raiz do projeto, construa a imagem e inicie o container.**
+   Para rodar em primeiro plano (você verá os logs no terminal):
+   ```sh
+   docker-compose up --build
+   ```
+   Para rodar em segundo plano (detached mode):
+   ```sh
+   docker-compose up --build -d
+   ```
+3. **Acesse a documentação interativa:**
+   Abra o navegador e acesse: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+Para parar e remover os recursos criados pelo compose, execute: `docker-compose down`.
+
+---
+
 ## Estrutura do Projeto
 
 - `app.py`: Arquivo principal da aplicação FastAPI.
